@@ -17,6 +17,13 @@ from django.conf.urls import url
 from django.contrib import admin
 from qa import views
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^question/', views.question),
+    url(r'^admin/', admin.site.urls),                                           
+    url(r'^login/', views.question),                                            
+    url(r'^signup/', views.question),                                            
+    url(r'^question/', views.question),                                         
+    url(r'^ask/', views.question),                                              
+    url(r'^popular/', views.question),                                          
+    url(r'^new/', views.question),
+    url(r'^$', views.question),                                                 
 ]
+
